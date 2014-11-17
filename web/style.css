@@ -88,7 +88,7 @@ body {
 #drag6 {
 	margin-left:15px;
 	margin-top:15px;
-	background-image: url("/images/ps_32x32.png");
+	background-image: url("/https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/ps_32x32.png");
 	width:32px;
 	height:32px;
 }
@@ -169,7 +169,7 @@ body {
 
 .dragged6 {
 	position:absolute; 
-	background-image: url("../images/ps_32x32.png");
+	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/ps_32x32.png");
 	width:32px;
 	height:32px;
 }
