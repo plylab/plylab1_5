@@ -48,7 +48,7 @@ body {
 #drag1 {
 	margin-left:15px;
 	margin-top:15px;
-	background-image: url("/images/cf_32x32.png");
+	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/cf_32x32.png");
 	width:32px;
 	height:32px;
 }
@@ -56,7 +56,7 @@ body {
 #drag2 {
 	margin-left:15px;
 	margin-top:15px;
-	background-image: url("/images/dw_32x32.png");
+	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/dw_32x32.png");
 	width:32px;
 	height:32px;
 }
@@ -64,7 +64,7 @@ body {
 #drag3 {
 	margin-left:15px;
 	margin-top:15px;
-	background-image: url("/images/fla_32x32.png");
+	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/fla_32x32.png");
 	width:32px;
 	height:32px;
 }
@@ -72,7 +72,7 @@ body {
 #drag4 {
 	margin-left:15px;
 	margin-top:15px;
-	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/flex_32x32.png");
+	background-image: url("/images/flex_32x32.png");
 	width:32px;
 	height:32px;
 }
@@ -80,7 +80,7 @@ body {
 #drag5 {
 	margin-left:15px;
 	margin-top:15px;
-	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/pdf_32x32.png");
+	background-image: url("/images/pdf_32x32.png");
 	width:32px;
 	height:32px;
 }
@@ -88,28 +88,28 @@ body {
 #drag6 {
 	margin-left:15px;
 	margin-top:15px;
-	background-image: url("/https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/ps_32x32.png");
+	background-image: url("/images/ps_32x32.png");
 	width:32px;
 	height:32px;
 }
 #drag7 {
 	margin-left:15px;
 	margin-top:15px;
-	background-image: url("/images/b1_32x32.png");
+	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/b1_32x32.png");
 	width:32px;
 	height:32px;
 }
 #drag8 {
 	margin-left:15px;
 	margin-top:15px;
-	background-image: url("/images/b2_32x32.png");
+	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/b2_32x32.png");
 	width:32px;
 	height:32px;
 }
 #drag9 {
 	margin-left:15px;
 	margin-top:15px;
-	background-image: url("/images/b3_32x32.png");
+	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/b3_32x32.png");
 	width:32px;
 	height:32px;
 }
@@ -134,62 +134,62 @@ body {
 /* classes for dragged stuff */
 .dragged1 {
 	position:absolute; 
-	background-image: url("../images/cf_32x32.png");
+	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/cf_32x32.png");
 	width:32px;
 	height:32px;
 }
 
 .dragged2 {
 	position:absolute; 
-	background-image: url("../images/dw_32x32.png");
+	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/dw_32x32.png");
 	width:32px;
 	height:32px;
 }
 
 .dragged3 {
 	position:absolute; 
-	background-image: url("../images/fla_32x32.png");
+	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/fla_32x32.png");
 	width:32px;
 	height:32px;
 }
 
 .dragged4 {
 	position:absolute; 
-	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/flex_32x32.png");
+	background-image: url("../images/flex_32x32.png");
 	width:32px;
 	height:32px;
 }
 
 .dragged5 {
 	position:absolute; 
-	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/pdf_32x32.png");
+	background-image: url("../images/pdf_32x32.png");
 	width:32px;
 	height:32px;
 }
 
 .dragged6 {
 	position:absolute; 
-	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/ps_32x32.png");
+	background-image: url("../images/ps_32x32.png");
 	width:32px;
 	height:32px;
 }
 .dragged7 {
 	position:absolute; 
-	background-image: url("../images/b1_32x32.png");
+	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/b1_32x32.png");
 	width:32px;
 	height:32px;
 }
 
 .dragged8 {
 	position:absolute; 
-	background-image: url("../images/b2_32x32.png");
+	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/b2_32x32.png");
 	width:32px;
 	height:32px;
 }
 
 .dragged9 {
 	position:absolute; 
-	background-image: url("/images/b3_32x32.png");
+	background-image: url("https://raw.githubusercontent.com/plylab/plylab1_5/master/web/images/b3_32x32.png");
 	width:32px;
 	height:32px;
 }
