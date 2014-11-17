@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta http-equiv="content-script-type" content="text/javascript" />
+    <meta http-equiv="content-style-type" content="text/css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+	google.load("jquery", "1.4.2");
+	google.load("jqueryui", "1.7.2");
+</script>
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<script type="text/javascript">
+    $(document).ready(function(){
+        //Counter
+        counter = 0;
+        //Make element draggable
+        $(".drag").draggable({
+            helper:'clone',
+            containment: 'frame',
+
+            //When first dragged
+            stop:function(ev, ui) {
+            	var pos=$(ui.helper).offset();
+            	objName = "#clonediv"+counter
+            	$(objName).css({"left":pos.left,"top":pos.top});
+            	$(objName).removeClass("drag");
+
+
+               	//When an existiung object is dragged
+                $(objName).draggable({
+                	containment: 'parent',
+                    stop:function(ev, ui) {
+                    	var pos=$(ui.helper).offset();
+                    	console.log($(this).attr("id"));
+						console.log(pos.left)
+                        console.log(pos.top)
+                    }
+                });
+            }
+        });
+        //Make element droppable
+        $("#frame").droppable({
+			drop: function(ev, ui) {
+				if (ui.helper.attr('id').search(/drag[0-9]/) != -1){
+					counter++;
+					var element=$(ui.draggable).clone();
+					element.addClass("tempclass");
+					$(this).append(element);
+					$(".tempclass").attr("id","clonediv"+counter);
+					$("#clonediv"+counter).removeClass("tempclass");
+
+					//Get the dynamically item id
+					draggedNumber = ui.helper.attr('id').search(/drag([0-9])/)
+					itemDragged = "dragged" + RegExp.$1
+					console.log(itemDragged)
+
+					$("#clonediv"+counter).addClass(itemDragged);
+				}
+        	}
+        });
+    });
+</script>
+
+<title>Sample</title>
+</head>
+<body>
+
+<div id="wrapper">
+	<div id="options">
+		<div id="drag1" class="drag"></div> <!-- end of drag1 -->
+		<div id="drag2" class="drag"></div> <!-- end of drag2 -->
+		<div id="drag3" class="drag"></div> <!-- end of drag3 -->
+		<div id="drag4" class="drag"></div> <!-- end of drag4 -->
+		<div id="drag5" class="drag"></div> <!-- end of drag5 -->
+		<div id="drag6" class="drag"></div> <!-- end of drag6 -->
+        <div id="drag7" class="drag"></div> <!-- end of drag4 -->
+		<div id="drag8" class="drag"></div> <!-- end of drag5 -->
+		<div id="drag9" class="drag"></div> <!-- end of drag6 -->
+	</div><!-- end of options -->
+	<div id="frame">
+		<span id="title"><h2>Sample</h2></span>
+        <table>
+        	<tr>
+            <td></td>
+            </tr>
+        </table>
+	</div><!-- end of frame -->
+</div><!-- end of wrapper -->
+
+</body>
+</html>
